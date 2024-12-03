@@ -134,17 +134,47 @@ table td, table th {
     .caja-datos{
         height: 20vh;
     }
+
+    
+
     #resultado{
         display: flex;
-        justify-content: center;
-        align-items: stretch;
+        justify-content: flex-start;
         flex-direction: column;
-        margin-top: 2%;
-    }
-    #resultado-ingresos, #resultado-gastos{
-        max-height: 200px;
+        margin-top: 2% 3%;
+        gap: 20px;
+        padding: 2%;
+        
     }
     
+    #resultado-ingresos, #resultado-gastos{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+      
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse; 
+        table-layout: auto; 
+    }
+    
+    table td, table th {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd; 
+    }
+    
+    .btn-eliminar {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
     #resultado-gastos{
         margin-top: 8%;
     }
