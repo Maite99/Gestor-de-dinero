@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* DATOS */
+.caja-datos{
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    color: white;
+    height: 30vh;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dinero-total{	
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2%;
+    
+}
+   
+.ingresos, .gastos{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.ingresos p, .gastos p{
+    margin-right: 5%;
+    
+}
+
+/* FORMULARIO */
+.caja-formulario{
+    background-color: #f0f0f0;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    padding: 2%;
+    
+}
+
+.formulario input{
+    width: 20%;
+}
+
+.formulario select{
+    width: 5%;
+}
+
+.formulario button{
+    width: 10%;
+    background-color: #9444aa;
+    color: white;
+    border: 1px solid black;
+}
+
+.formulario button:hover{
+    background-color: #9b51b7;
+}
+
+.formulario input, .formulario select, .formulario button{
+    padding: 0.5%;
+}
+
+
+
+/* RESULTADOS */
+#resultado{
+    display: flex;
+    padding: 2%;
+    margin: 1% 3%;
+    gap: 20%;
+}
+
+#resultado-ingresos h3{
+    color: #e81ea5;
+    border-bottom: 1px solid #e81ea5;
+}
+#resultado-gastos h3{
+    color: #06a0cf;
+    border-bottom: 1px solid #06a0cf;
+}
+
+#resultado-ingresos, #resultado-gastos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    max-height: 300px; /* Limitar la altura máxima */
+    width: 100%; /* Asegúrate de que la tabla ocupe el espacio disponible */
+}
+
+/* Estilo de las tablas */
+table {
+    width: 100%;
+    height: 100%;
+}
+
+table td, table th {
+    padding: 30px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.btn-eliminar{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* MEDIA QUERIES */
+@media(max-width: 992px){
+    .caja-datos{
+        height: 15vh;
+        
+    }
+}
+
+@media(max-width: 768px){
+    .caja-datos{
+        height: 20vh;
+    }
+    #resultado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2%;
+    }
+    #resultado-gastos{
+        margin-top: 8%;
+    }
+
+    #opciones{
+        width: 7%;
+    }
+ 
+}
+
+@media(max-width: 480px){
+    #boton{
+        width: 15%;
+    }
+   h1{	
+        font-size: 1.5rem;
+    }
+    .caja-datos{
+        height: 23vh;
+    }
+    #opciones{
+        width: 10%;
+    }
+}
+
+@media(max-width: 320px){
+    .caja-datos{
+        height: 28vh;
+    }
+    #opciones{
+        width: 12%;
+    }
+    .formulario input{
+        width: 28%;
+    }
+    #boton{
+        width: 18%;
+    }
+}

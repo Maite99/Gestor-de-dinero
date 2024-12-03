@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+    <title>Gestor de Gastos</title>
+</head>
+<body>
+    <div class="contenedor">
+        <!-- DATOS -->
+         <div class="caja-datos">
+            <div class="dinero-total">
+                <h1>Dinero total disponible:</h1>
+                <p id="dinero-total">0,00€</p>
+            </div>
+            <div class="ingresos">
+                <p>Ingresos:</p>
+                <p id="ingresos-total">0,00€</p>
+            </div>
+            <div class="gastos">
+                <p>Gastos:</p>
+                <p id="gastos-total">0,00€</p>
+            </div>
+        </div>
+
+            <!-- FORMULARIO -->
+        <div class="caja-formulario">
+            <form action="#" id="formulario" class="formulario">
+               
+                <!-- ingreso o gasto -->
+                <select name="opciones" id="opciones">
+                    <option value="ingreso">+ </option>
+                    <option value="gasto">-</option>
+                </select>
+                <!-- descripcion -->
+                <input type="text" placeholder="Descripción" id="descripcion">
+                <!-- cantidad -->
+                <input type="text" placeholder="Cantidad" id="cantidad">
+                <!-- boton -->
+                <button type="submit" id="boton">Añadir</button>
+            </form>
+        </div>
+            
+<!-- RESULTADOS -->
+            <div id="resultado">
+                <div id="resultado-ingresos">
+                    <h3>INGRESOS</h3>
+                    <table >
+                        <thead>
+                            <tr id="ingreso-nuevo">
+                            
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div id="resultado-gastos">
+                    <h3>GASTOS</h3>
+                    <table >
+                        <thead>
+                            <tr id="gasto-nuevo">
+                            
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+         </div>
+    </div>
+</body>
+</html>
