@@ -98,6 +98,7 @@
     gap: 1%;
     max-height: 300px; /* Limitar la altura máxima */
     width: 100%; /* Asegúrate de que la tabla ocupe el espacio disponible */
+
 }
 
 /* Estilo de las tablas */
@@ -136,10 +137,14 @@ table td, table th {
     #resultado{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         flex-direction: column;
         margin-top: 2%;
     }
+    #resultado-ingresos, #resultado-gastos{
+        max-height: 200px;
+    }
+    
     #resultado-gastos{
         margin-top: 8%;
     }
